@@ -5,26 +5,450 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATG Project</title>
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- Header start -->
     <header class="header">
-      <div class="header-container">
-        <div>
+      <div class="header-container container">
+        <div class="hero-top">
           <img
             src="./assets/images/arrow_back_24px.png"
             alt="arrow-button-icon"
           />
-          <button>Join Group</button>
+
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Join Group
+          </button>
         </div>
-        <div>
-          <h4>Computer Engineering</h4>
+        <div class="hero-bottom">
+          <h6>Computer Engineering</h6>
           <p>142,765 Computer Enginners follow this</p>
         </div>
       </div>
     </header>
-    <main></main>
+    <!-- Header close -->
+
+    <main>
+      <!-- filter section start -->
+      <section class="filter-section container">
+        <h6>Posts(368)</h6>
+        <div class="dropdown">
+          <button
+            class="btn bg-body-secondary dropdown-toggle rounded-1"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Filter: All
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- filter sectin close -->
+
+      <!-- Post section start -->
+      <section class="mt-3 posts">
+        <div class="post-container">
+          <!-- Article post -->
+          <div class="post pb-4 my-3 shadow">
+            <img
+              src="./assets/images/post_images/post1.png"
+              alt="article-image"
+            />
+
+            <div class="post-text-content container">
+              <div class="d-flex article gap-2">
+                <img
+                  class="article-icon"
+                  src="./assets/images/posts_icon/article_icon.png"
+                  alt="article"
+                />
+                <p class="m-0">Article</p>
+              </div>
+
+              <div
+                class="post-heading d-flex justify-content-between gap-2 mt-2"
+              >
+                <h6 class="fw-bold">
+                  What if famous brands had regular fonts? Meet RegulaBrands!
+                </h6>
+
+                <div class="dropdown">
+                  <button
+                    class="btn btn-light align-items-center"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./assets/images/posts_icon/three_dot.png"
+                      alt="three-dot-icon"
+                    />
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p>
+                I’ve worked in UX for the better part of a decade. From now on,
+                I plan to rei…
+              </p>
+              <div class="post-author d-flex justify-content-between">
+                <div class="author-name-image d-flex gap-2">
+                  <img
+                    src="./assets/images/author_images/author1.png"
+                    alt="author-image"
+                  />
+                  <div class="author-name-views">
+                    <h6 class="m-0 text-nowrap">Sarthak Kamra</h6>
+                    <small>1.4k views</small>
+                  </div>
+                </div>
+                <button
+                  class="align-self-center justify-content-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
+                >
+                  <img
+                    class="mx-1"
+                    src="./assets/images/posts_icon/share.png"
+                    alt="share"
+                  />Share
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education post -->
+          <div class="post pb-4 my-3 shadow">
+            <img
+              src="./assets/images/post_images/post2.png"
+              alt="education-image"
+            />
+
+            <div class="post-text-content container">
+              <div class="d-flex article gap-2">
+                <img
+                  class="education-icon"
+                  src="./assets/images/posts_icon/education.png"
+                  alt="education"
+                />
+                <p class="m-0">Education</p>
+              </div>
+
+              <div
+                class="post-heading d-flex justify-content-between gap-2 mt-2"
+              >
+                <h6 class="fw-bold">
+                  What if famous brands had regular fonts? Meet RegulaBrands!
+                </h6>
+
+                <div class="dropdown">
+                  <button
+                    class="btn btn-light align-items-center"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./assets/images/posts_icon/three_dot.png"
+                      alt="three-dot-icon"
+                    />
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p>
+                I’ve worked in UX for the better part of a decade. From now on,
+                I plan to rei…
+              </p>
+              <div class="post-author d-flex justify-content-between">
+                <div class="author-name-image d-flex gap-2">
+                  <img
+                    src="./assets/images/author_images/author2.png"
+                    alt="author-image"
+                  />
+                  <div class="author-name-views">
+                    <h6 class="m-0 text-nowrap">Sarah West</h6>
+                    <small>4.8k views</small>
+                  </div>
+                </div>
+                <button
+                  class="align-self-center justify-content-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
+                >
+                  <img
+                    class="mx-1"
+                    src="./assets/images/posts_icon/share.png"
+                    alt="share"
+                  />Share
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Meetup post -->
+          <div class="post pb-4 my-3 shadow">
+            <img
+              src="./assets/images/post_images/post3.png"
+              alt="meetup-image"
+            />
+
+            <div class="post-text-content container">
+              <div class="d-flex article gap-2">
+                <img
+                  class="education-icon"
+                  src="./assets/images/posts_icon/meetup.png"
+                  alt="education"
+                />
+                <p class="m-0">Meetup</p>
+              </div>
+
+              <div
+                class="post-heading d-flex justify-content-between gap-2 mt-2"
+              >
+                <h6 class="fw-bold">
+                  Finance & Investment Elite Social Mixer @Lujiazui
+                </h6>
+
+                <div class="dropdown">
+                  <button
+                    class="btn btn-light align-items-center"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./assets/images/posts_icon/three_dot.png"
+                      alt="three-dot-icon"
+                    />
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="date-location-button">
+                <div class="date-location d-flex justify-content-between">
+                  <div class="date">
+                    <img
+                      src="./assets/images/posts_icon/calendar.png"
+                      alt="calendar"
+                    />
+                    <small>Fri, 12 Oct, 2018</small>
+                  </div>
+                  <div class="location">
+                    <img
+                      src="./assets/images/posts_icon/location.png"
+                      alt="location"
+                    />
+                    <small>Ahmedabad, India</small>
+                  </div>
+                </div>
+                <button
+                  class="w-100 bg-transparent border-1 shadow-none rounded-2 my-3 py-1 text-danger fw-semibold"
+                >
+                  Visit Website
+                </button>
+              </div>
+              <div class="post-author d-flex justify-content-between">
+                <div class="author-name-image d-flex gap-2">
+                  <img
+                    src="./assets/images/author_images/author3.png"
+                    alt="author-image"
+                  />
+                  <div class="author-name-views">
+                    <h6 class="m-0 text-nowrap">Sarah West</h6>
+                    <small>4.8k views</small>
+                  </div>
+                </div>
+                <button
+                  class="align-self-center justify-content-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
+                >
+                  <img
+                    class="mx-1"
+                    src="./assets/images/posts_icon/share.png"
+                    alt="share"
+                  />Share
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job post -->
+          <div class="post pb-4 my-3 shadow">
+            <!-- <img
+              src="./assets/images/post_images/post3.png"
+              alt="meetup-image"
+            /> -->
+
+            <div class="post-text-content container pt-3">
+              <div class="d-flex article gap-2">
+                <img
+                  class="job-icon"
+                  src="./assets/images/posts_icon/job.png"
+                  alt="job"
+                />
+                <p class="m-0">Job</p>
+              </div>
+
+              <div
+                class="post-heading d-flex justify-content-between gap-2 mt-2"
+              >
+                <h6 class="fw-bold">
+                  Finance & Investment Elite Social Mixer @Lujiazui
+                </h6>
+
+                <div class="dropdown">
+                  <button
+                    class="btn btn-light align-items-center"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./assets/images/posts_icon/three_dot.png"
+                      alt="three-dot-icon"
+                    />
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="date-location-button">
+                <div class="date-location d-flex justify-content-between">
+                  <div class="date">
+                    <img src="./assets/images/posts_icon/job.png" alt="job" />
+                    <small>Innovaccer Analytics Private Ltd.</small>
+                  </div>
+                  <div class="location">
+                    <img
+                      src="./assets/images/posts_icon/location.png"
+                      alt="location"
+                    />
+                    <small>Noida, India</small>
+                  </div>
+                </div>
+                <button
+                  class="w-100 bg-transparent border-1 shadow-none rounded-2 my-3 py-1 text-success fw-semibold"
+                >
+                  Apply on Timesjobs
+                </button>
+              </div>
+              <div class="post-author d-flex justify-content-between">
+                <div class="author-name-image d-flex gap-2">
+                  <img
+                    src="./assets/images/author_images/author4.png"
+                    alt="author-image"
+                  />
+                  <div class="author-name-views">
+                    <h6 class="m-0 text-nowrap">Joseph Gray</h6>
+                    <small>1.7k views</small>
+                  </div>
+                </div>
+                <button
+                  class="align-self-center justify-content-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
+                >
+                  <img
+                    class="mx-1"
+                    src="./assets/images/posts_icon/share.png"
+                    alt="share"
+                  />Share
+                </button>
+              </div>
+            </div>
+          </div>
+          <img
+            class="position-fixed bottom-0 end-0 w-10 rounded-circle p-3 bg-danger btn"
+            src="./assets/images/posts_icon/edit_pen.svg"
+            alt="edit_pen"
+          />
+        </div>
+      </section>
+      <!-- Post section close -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- login -->
+      <div>
+        
+      </div>
+    </main>
     <footer></footer>
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

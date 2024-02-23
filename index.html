@@ -10,41 +10,40 @@
   <body>
     <!-- Header start -->
     <header class="header">
-      <div
-        class="d-flex justify-content-around align-items-center py-3 logo-and-search d-none d-md-flex"
-      >
-        <img src="./assets/images/logo.svg" alt="logo" />
-        <input
-          class="fs-6 text-muted rounded-pill border-0 bg-body-secondary px-4 py-2 w-25"
-          type="search"
-          placeholder="Search for your favorite groups in ATG"
-        />
-        <div class="dropdown">
-          <button
-            class="btn text-dark dropdown-toggle fw-semibold bg-transparent m-0 p-0 btn-outline-light"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Create account. <span class="text-primary">It’s free!</span>
-          </button>
-          <ul class="dropdown-menu">
-            <li
+      <div class="sticky-md-top w-100 bg-white">
+        <div
+          class="d-flex justify-content-around align-items-center py-3 logo-and-search d-none d-md-flex"
+        >
+          <img src="./assets/images/logo.svg" alt="logo" />
+          <input
+            class="fs-6 text-muted rounded-pill border-0 bg-body-secondary px-4 py-2 w-25"
+            type="search"
+            placeholder="Search for your favorite groups in ATG"
+          />
+          <div class="dropdown">
+            <button
+              class="btn text-dark dropdown-toggle fw-semibold bg-transparent m-0 p-0 btn-outline-light"
               type="button"
-              class="btn w-100 text-start"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
-              <a class="dropdown-item" href="#"></a>Sign up
-            </li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+              Create account. <span class="text-primary">It’s free!</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li
+                type="button"
+                class="w-100 text-start"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <a class="dropdown-item" href="#">Sign up</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <!-- type="button" class="btn btn-primary" data-bs-toggle="modal"
-      data-bs-target="#exampleModal" -->
 
       <div class="hero">
         <div class="header-container container">
@@ -57,14 +56,14 @@
             <!-- Button trigger modal -->
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn btn-light"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
               Join Group
             </button>
           </div>
-          <div class="hero-bottom d-md-flex mt-auto">
+          <div class="hero-bottom d-md-flex mt-auto mb-md-5 mb-4">
             <h6>Computer Engineering</h6>
             <p>142,765 Computer Enginners follow this</p>
           </div>
@@ -75,78 +74,81 @@
 
     <main>
       <!-- filter section start -->
-      <section class="filter-section container">
-        <h6 class="posts-mobile-view fw-semibold d-md-none">Posts(368)</h6>
 
-        <!-- Tabs -->
-        <ul class="nav nav-underline border-bottom w-100 d-none d-md-flex">
-          <li class="nav-item">
-            <a
-              class="nav-link active fw-semibold fs-6"
-              aria-current="page"
-              href="#"
-              >All Posts(32)</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-muted fs-6" href="#">Article</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-muted fs-6" href="#">Event</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-muted fs-6" href="#">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-muted fs-6" href="#">Job</a>
-          </li>
+      <div class="sticky-md-top w-100 bg-white">
+        <section class="filter-section container">
+          <h6 class="posts-mobile-view fw-semibold d-md-none">Posts(368)</h6>
 
-          <!--Post and group buttons -->
-          <div class="ms-auto d-flex align-items-center gap-3">
-            <div class="dropdown d-none d-md-flex">
-              <button
-                class="btn bg-body-secondary dropdown-toggle rounded-1"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+          <!-- Tabs -->
+          <ul class="nav nav-underline border-bottom w-100 d-none d-md-flex">
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-semibold fs-6"
+                aria-current="page"
+                href="#"
+                >All Posts(32)</a
               >
-                Write a Post
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </div>
-            <div class="d-flex btn bg-primary gap-2">
-              <img src="./assets/images/group.svg" alt="group" />
-              <button class="bg-transparent border-0 text-white">
-                Join Group
-              </button>
-            </div>
-          </div>
-        </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted fs-6" href="#">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted fs-6" href="#">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted fs-6" href="#">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted fs-6" href="#">Job</a>
+            </li>
 
-        <!-- Filter for mobile view -->
-        <div class="dropdown d-md-none">
-          <button
-            class="btn bg-body-secondary dropdown-toggle rounded-1"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Filter: All
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <!--Post and group buttons -->
+            <div class="ms-auto d-flex align-items-center gap-3">
+              <div class="dropdown d-none d-md-flex">
+                <button
+                  class="btn bg-body-secondary dropdown-toggle rounded-1"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Write a Post
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex btn bg-primary gap-2">
+                <img src="./assets/images/group.svg" alt="group" />
+                <button class="bg-transparent border-0 text-white">
+                  Join Group
+                </button>
+              </div>
+            </div>
           </ul>
-        </div>
-      </section>
-      <!-- filter section close -->
+
+          <!-- Filter for mobile view -->
+          <div class="dropdown d-md-none">
+            <button
+              class="btn bg-body-secondary dropdown-toggle rounded-1"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Filter: All
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </section>
+        <!-- filter section close -->
+      </div>
 
       <!-- Post section start -->
       <section
@@ -296,26 +298,42 @@
                 I’ve worked in UX for the better part of a decade. From now on,
                 I plan to rei…
               </p>
-              <div class="post-author d-flex justify-content-between">
+
+              <div
+                class="post-author d-flex justify-content-between align-items-center"
+              >
                 <div class="author-name-image d-flex gap-2">
                   <img
                     src="./assets/images/author_images/author2.png"
                     alt="author-image"
                   />
-                  <div class="author-name-views">
+                  <div
+                    class="author-name-views d-md-flex align-items-md-center justify-content-md-between"
+                  >
                     <h6 class="m-0 text-nowrap">Sarah West</h6>
-                    <small>4.8k views</small>
+                    <small class="ms-auto d-md-none">4.8k views</small>
                   </div>
                 </div>
-                <button
-                  class="align-self-center justify-content-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
+                <small
+                  class="ms-auto d-none d-md-flex me-5 align-items-md-center gap-2"
+                  ><img
+                    src="./assets/images/visibility_24px.svg"
+                    alt="visibility"
+                  />
+                  4.8k views</small
+                >
+                <div
+                  class="d-flex btn align-items-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
                 >
                   <img
                     class="mx-1"
                     src="./assets/images/posts_icon/share.png"
                     alt="share"
-                  />Share
-                </button>
+                  />
+                  <button class="bg-transparent border-0 d-md-none">
+                    Share
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -391,37 +409,48 @@
                   Visit Website
                 </button>
               </div>
-              <div class="post-author d-flex justify-content-between">
+
+              <div
+                class="post-author d-flex justify-content-between align-items-center"
+              >
                 <div class="author-name-image d-flex gap-2">
                   <img
                     src="./assets/images/author_images/author3.png"
                     alt="author-image"
                   />
-                  <div class="author-name-views">
-                    <h6 class="m-0 text-nowrap">Sarah West</h6>
-                    <small>4.8k views</small>
+                  <div
+                    class="author-name-views d-md-flex align-items-md-center justify-content-md-between"
+                  >
+                    <h6 class="m-0 text-nowrap">Ronal Jones</h6>
+                    <small class="ms-auto d-md-none">1.4k views</small>
                   </div>
                 </div>
-                <button
-                  class="align-self-center justify-content-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
+                <small
+                  class="ms-auto d-none d-md-flex me-5 align-items-md-center gap-2"
+                  ><img
+                    src="./assets/images/visibility_24px.svg"
+                    alt="visibility"
+                  />
+                  1.4k views</small
+                >
+                <div
+                  class="d-flex btn align-items-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
                 >
                   <img
                     class="mx-1"
                     src="./assets/images/posts_icon/share.png"
                     alt="share"
-                  />Share
-                </button>
+                  />
+                  <button class="bg-transparent border-0 d-md-none">
+                    Share
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Job post -->
           <div class="post pb-4 my-3 shadow">
-            <!-- <img
-              src="./assets/images/post_images/post3.png"
-              alt="meetup-image"
-            /> -->
-
             <div class="post-text-content container pt-3">
               <div class="d-flex article gap-2">
                 <img
@@ -482,26 +511,42 @@
                   Apply on Timesjobs
                 </button>
               </div>
-              <div class="post-author d-flex justify-content-between">
+
+              <div
+                class="post-author d-flex justify-content-between align-items-center"
+              >
                 <div class="author-name-image d-flex gap-2">
                   <img
-                    src="./assets/images/author_images/author4.png"
+                    src="./assets/images/author_images/author1.png"
                     alt="author-image"
                   />
-                  <div class="author-name-views">
+                  <div
+                    class="author-name-views d-md-flex align-items-md-center justify-content-md-between"
+                  >
                     <h6 class="m-0 text-nowrap">Joseph Gray</h6>
-                    <small>1.7k views</small>
+                    <small class="ms-auto d-md-none">1.4k views</small>
                   </div>
                 </div>
-                <button
-                  class="align-self-center justify-content-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
+                <small
+                  class="ms-auto d-none d-md-flex me-5 align-items-md-center gap-2"
+                  ><img
+                    src="./assets/images/visibility_24px.svg"
+                    alt="visibility"
+                  />
+                  1.4k views</small
+                >
+                <div
+                  class="d-flex btn align-items-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
                 >
                   <img
                     class="mx-1"
                     src="./assets/images/posts_icon/share.png"
                     alt="share"
-                  />Share
-                </button>
+                  />
+                  <button class="bg-transparent border-0 d-md-none">
+                    Share
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -555,20 +600,46 @@
                 </p>
               </div>
 
-              <!-- Group -->
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex gap-2 align-items-center">
-                  <img
-                    class="w-100 h-100"
-                    src="./assets/images/group/group1.png"
-                    alt="group"
-                  />
-                  <p class="m-0 fs-6">Leisure</p>
+              <!-- Group start -->
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex gap-2 align-items-center">
+                    <img src="./assets/images/group/group1.png" alt="group" />
+                    <p class="m-0 fs-6">Leisure</p>
+                  </div>
+                  <button class="rounded-pill border-0 px-3 py-1 fs-6">
+                    Follow
+                  </button>
                 </div>
-                <button class="rounded-pill border-0 px-3 py-1 fs-6">
-                  Follow
-                </button>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex gap-2 align-items-center">
+                    <img src="./assets/images/group/group2.png" alt="group" />
+                    <p class="m-0 fs-6">Activism</p>
+                  </div>
+                  <button class="rounded-pill border-0 px-3 py-1 fs-6">
+                    Follow
+                  </button>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex gap-2 align-items-center">
+                    <img src="./assets/images/group/group3.png" alt="group" />
+                    <p class="m-0 fs-6">MBA</p>
+                  </div>
+                  <button class="rounded-pill border-0 px-3 py-1 fs-6">
+                    Follow
+                  </button>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex gap-2 align-items-center">
+                    <img src="./assets/images/group/group4.png" alt="group" />
+                    <p class="m-0 fs-6">Philosophy</p>
+                  </div>
+                  <button class="rounded-pill border-0 px-3 py-1 fs-6">
+                    Follow
+                  </button>
+                </div>
               </div>
+              <!-- Group close -->
             </div>
           </div>
 
@@ -579,7 +650,7 @@
       </section>
       <!-- Post section close -->
 
-      <!-- Modal -->
+      <!-- Signup Modal -->
       <div
         class="modal fade"
         id="exampleModal"
@@ -587,112 +658,301 @@
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Modal title
-              </h1>
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content pt-4 pt-md-0">
+            <button
+              type="button"
+              class="btn-close ms-auto d-none d-md-block"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <p
+              class="fs-6 text-center bg-success-subtle text-success py-3 px-2 d-none d-md-block"
+            >
+              Let's learn, share & inspire each other with our passion for
+              computer engineering. Sign up now 🤘🏼
+            </p>
+            <div class="w-100 px-3 d-flex align-items-center">
+              <div class="d-flex justify-content-between w-100">
+                <h1
+                  class="modal-title fs-4 fw-bold text-black"
+                  id="exampleModalLabel"
+                >
+                  Create Account
+                </h1>
+                <small class="m-0 ms-auto d-none d-md-block"
+                  >Already have an account?
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#signinModal"
+                    class="fw-semibold text-decoration-none"
+                    href="#"
+                    >Sign In</a
+                  >
+                </small>
+              </div>
               <button
                 type="button"
-                class="btn-close"
+                class="btn-close d-md-none"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">...</div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
+            <div class="modal-body">
+              <!-- Signup section  -->
+              <section class="col d-flex">
+                <!-- signup input fields -->
+                <div class="col-md-6">
+                  <div class="input-fields">
+                    <div class="name-input d-flex w-100">
+                      <input
+                        class="w-50 p-2 bg-light border"
+                        type="text"
+                        placeholder="First Name"
+                      />
+                      <input
+                        class="w-50 p-2 bg-light border"
+                        type="text"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                    <div class="rest-input w-100 position-relative">
+                      <input
+                        class="w-100 p-2 bg-light border"
+                        type="email"
+                        placeholder="Email"
+                      />
+                      <input
+                        class="w-100 p-2 bg-light position-relative border"
+                        type="password"
+                        placeholder="Password"
+                      />
+                      <input
+                        class="w-100 p-2 bg-light border"
+                        type="password"
+                        placeholder="Confirm Password"
+                      />
+
+                      <img
+                        class="position-absolute end-0 top-50 me-2"
+                        src="./assets/images/visibility_24px.svg"
+                        alt="visibility"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="my-4 col create-button d-flex justify-content-between"
+                  >
+                    <button
+                      class="text-nowrap col-md-12 border-0 shadow-none rounded-pill py-2 px-4 btn btn-primary"
+                    >
+                      Create Account
+                    </button>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#signinModal"
+                      class="text-dark text-nowrap fw-semibold d-md-none col-md-6"
+                      href="#signinModal"
+                      >or, Sign In</a
+                    >
+                  </div>
+                  <div class="facebook-button mb-3">
+                    <button
+                      class="w-100 bg-transparent border rounded-1 py-2 d-flex align-items-center justify-content-center gap-2"
+                    >
+                      <img
+                        src="./assets/images/f_logo_RGB-Blue_1024.svg"
+                        alt="facebook"
+                      />
+                      Sign up with Facebook
+                    </button>
+                  </div>
+                  <div class="google-button mb-4">
+                    <button
+                      class="w-100 bg-transparent border rounded-1 py-2 d-flex align-items-center justify-content-center gap-2"
+                    >
+                      <img src="./assets/images/search.svg" alt="google" />
+                      Sign up with Google
+                    </button>
+                  </div>
+
+                  <div class="text-center lh-sm d-md-none">
+                    <small>
+                      By signing up, you agree to our Terms & conditions,
+                      Privacy policy
+                    </small>
+                  </div>
+                </div>
+
+                <!-- signup image -->
+                <div
+                  class="col-md-6 signup-image d-flex flex-column justify-content-between"
+                >
+                  <img
+                    class="d-none d-md-flex"
+                    src="./assets/images/signin_signup_image.svg"
+                    alt="signup"
+                  />
+                  <div class="text-center lh-sm d-none d-md-flex mt-auto">
+                    <small>
+                      By signing up, you agree to our Terms & conditions,
+                      Privacy policy
+                    </small>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Signup section  -->
-      <section class="container">
-        <div class="input-fields">
-          <div class="name-input d-flex w-100">
-            <input
-              class="w-50 p-2 bg-light"
-              type="text"
-              placeholder="First Name"
-            />
-            <input
-              class="w-50 p-2 bg-light"
-              type="text"
-              placeholder="Last Name"
-            />
-          </div>
-          <div class="rest-input w-100 position-relative">
-            <input
-              class="w-100 p-2 bg-light"
-              type="email"
-              placeholder="Email"
-            />
-            <input
-              class="w-100 p-2 bg-light position-relative"
-              type="password"
-              placeholder="Password"
-            />
-            <input
-              class="w-100 p-2 bg-light"
-              type="password"
-              placeholder="Confirm Password"
-            />
+      <!-- Signin Modal -->
+      <!-- data-bs-toggle="modal"
+              data-bs-target="#signinleModal" -->
+      <div
+        class="modal fade"
+        id="signinModal"
+        tabindex="-1"
+        aria-labelledby="signinModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close ms-auto d-none d-md-block"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
 
-            <img
-              class="position-absolute end-0 top-50 me-2"
-              src="./assets/images/visibility_24px.svg"
-              alt="visibility"
-            />
+            <p
+              class="fs-6 text-center bg-success-subtle text-success py-3 px-2 d-none d-md-block"
+            >
+              Let's learn, share & inspire each other with our passion for
+              computer engineering. Sign up now 🤘🏼
+            </p>
+            <div class="w-100 px-3 d-flex align-items-center">
+              <div class="d-flex justify-content-between w-100">
+                <h1
+                  class="modal-title fs-4 fw-bold text-black"
+                  id="exampleModalLabel"
+                >
+                  Welcome back!
+                </h1>
+
+                <small class="m-0 ms-auto d-none d-md-flex text-wrap"
+                  >Don’t have an account yet?
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    class="fw-semibold text-decoration-none"
+                    href="#"
+                    >Create new for free!</a
+                  >
+                </small>
+              </div>
+              <button
+                type="button"
+                class="btn-close d-md-none"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Signin section  -->
+              <section class="col d-flex">
+                <!-- signin input fields -->
+                <div class="col-md-6 col-12">
+                  <div class="input-fields">
+                    <div class="rest-input w-100">
+                      <input
+                        class="w-100 p-2 bg-light border"
+                        type="email"
+                        placeholder="Email"
+                      />
+                      <div class="position-relative">
+                        <input
+                          class="w-100 p-2 bg-light border"
+                          type="password"
+                          placeholder="Password"
+                        />
+
+                        <div
+                          class="position-absolute end-0 top-0 bottom-0 me-2"
+                        >
+                          <img
+                            class=""
+                            src="./assets/images/visibility_24px.svg"
+                            alt="visibility"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="my-4 col create-button d-flex justify-content-between"
+                  >
+                    <button
+                      class="text-nowrap col-md-12 border-0 shadow-none rounded-pill py-2 px-4 btn btn-primary"
+                    >
+                      Sign In
+                    </button>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      class="text-dark text-nowrap fw-semibold d-md-none col-md-6"
+                      href="#signin"
+                      >or, Create Account</a
+                    >
+                  </div>
+                  <div class="facebook-button mb-3">
+                    <button
+                      class="w-100 bg-transparent border rounded-1 py-2 d-flex align-items-center justify-content-center gap-2"
+                    >
+                      <img
+                        src="./assets/images/f_logo_RGB-Blue_1024.svg"
+                        alt="facebook"
+                      />
+                      Sign up with Facebook
+                    </button>
+                  </div>
+                  <div class="google-button mb-4">
+                    <button
+                      class="w-100 bg-transparent border rounded-1 py-2 d-flex align-items-center justify-content-center gap-2"
+                    >
+                      <img src="./assets/images/search.svg" alt="google" />
+                      Sign up with Google
+                    </button>
+                  </div>
+
+                  <div class="text-center lh-sm fw-semibold">
+                    <small> Forgot Password? </small>
+                  </div>
+                </div>
+
+                <!-- signup image -->
+                <div
+                  class="col-md-6 signup-image d-flex flex-column justify-content-between"
+                >
+                  <img
+                    class="d-none d-md-flex"
+                    src="./assets/images/signin_signup_image.svg"
+                    alt="signup"
+                  />
+                  <!-- <div class="text-center lh-sm d-none d-md-flex mt-auto">
+                    <small>
+                      By signing up, you agree to our Terms & conditions,
+                      Privacy policy
+                    </small>
+                  </div> -->
+                </div>
+              </section>
+            </div>
           </div>
         </div>
-        <div class="my-4 create-button d-flex justify-content-between">
-          <button
-            class="border-0 shadow-none rounded-pill py-2 px-4 btn btn-primary"
-          >
-            Create Account
-          </button>
-          <a class="text-dark fw-semibold" href="#signin">or, Sign In</a>
-        </div>
-        <div class="facebook-button mb-3">
-          <button
-            class="w-100 bg-transparent border-1 shadow-none rounded-1 py-2 d-flex align-items-center justify-content-center gap-2"
-          >
-            <img
-              src="./assets/images/f_logo_RGB-Blue_1024.svg"
-              alt="facebook"
-            />
-            Sign up with Facebook
-          </button>
-        </div>
-        <div class="google-button mb-4">
-          <button
-            class="w-100 bg-transparent border-1 shadow-none rounded-1 py-2 d-flex align-items-center justify-content-center gap-2"
-          >
-            <img src="./assets/images/search.svg" alt="google" />
-            Sign up with Google
-          </button>
-        </div>
-
-        <div class="text-center lh-sm">
-          <small>
-            By signing up, you agree to our Terms & conditions, Privacy policy
-          </small>
-        </div>
-      </section>
+      </div>
     </main>
-
-    <footer></footer>
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>

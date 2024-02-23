@@ -20,7 +20,7 @@ $hero-bg-image: "../images/hero-bg.png";
 // Header section
 .hero {
   @include background-image($hero-bg-image);
-  min-height: 14.75rem;
+  min-height: 27.5rem;
   position: relative;
 
   &::before {
@@ -42,7 +42,7 @@ $hero-bg-image: "../images/hero-bg.png";
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 14.75rem;
+    min-height: 27.5rem;
 
     .hero-top {
       display: flex;

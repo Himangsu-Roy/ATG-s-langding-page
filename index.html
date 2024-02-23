@@ -10,26 +10,64 @@
   <body>
     <!-- Header start -->
     <header class="header">
-      <div class="header-container container">
-        <div class="hero-top">
-          <img
-            src="./assets/images/arrow_back_24px.png"
-            alt="arrow-button-icon"
-          />
-
-          <!-- Button trigger modal -->
+      <div
+        class="d-flex justify-content-around align-items-center py-3 logo-and-search d-none d-md-flex"
+      >
+        <img src="./assets/images/logo.svg" alt="logo" />
+        <input
+          class="fs-6 text-muted rounded-pill border-0 bg-body-secondary px-4 py-2 w-25"
+          type="search"
+          placeholder="Search for your favorite groups in ATG"
+        />
+        <div class="dropdown">
           <button
+            class="btn text-dark dropdown-toggle fw-semibold bg-transparent m-0 p-0 btn-outline-light"
             type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
           >
-            Join Group
+            Create account. <span class="text-primary">It’s free!</span>
           </button>
+          <ul class="dropdown-menu">
+            <li
+              type="button"
+              class="btn w-100 text-start"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <a class="dropdown-item" href="#"></a>Sign up
+            </li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
         </div>
-        <div class="hero-bottom">
-          <h6>Computer Engineering</h6>
-          <p>142,765 Computer Enginners follow this</p>
+      </div>
+
+      <!-- type="button" class="btn btn-primary" data-bs-toggle="modal"
+      data-bs-target="#exampleModal" -->
+
+      <div class="hero">
+        <div class="header-container container">
+          <div class="hero-top d-md-none">
+            <img
+              src="./assets/images/arrow_back_24px.png"
+              alt="arrow-button-icon"
+            />
+
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Join Group
+            </button>
+          </div>
+          <div class="hero-bottom d-md-flex mt-auto">
+            <h6>Computer Engineering</h6>
+            <p>142,765 Computer Enginners follow this</p>
+          </div>
         </div>
       </div>
     </header>
@@ -38,8 +76,61 @@
     <main>
       <!-- filter section start -->
       <section class="filter-section container">
-        <h6>Posts(368)</h6>
-        <div class="dropdown">
+        <h6 class="posts-mobile-view fw-semibold d-md-none">Posts(368)</h6>
+
+        <!-- Tabs -->
+        <ul class="nav nav-underline border-bottom w-100 d-none d-md-flex">
+          <li class="nav-item">
+            <a
+              class="nav-link active fw-semibold fs-6"
+              aria-current="page"
+              href="#"
+              >All Posts(32)</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted fs-6" href="#">Article</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted fs-6" href="#">Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted fs-6" href="#">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted fs-6" href="#">Job</a>
+          </li>
+
+          <!--Post and group buttons -->
+          <div class="ms-auto d-flex align-items-center gap-3">
+            <div class="dropdown d-none d-md-flex">
+              <button
+                class="btn bg-body-secondary dropdown-toggle rounded-1"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Write a Post
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex btn bg-primary gap-2">
+              <img src="./assets/images/group.svg" alt="group" />
+              <button class="bg-transparent border-0 text-white">
+                Join Group
+              </button>
+            </div>
+          </div>
+        </ul>
+
+        <!-- Filter for mobile view -->
+        <div class="dropdown d-md-none">
           <button
             class="btn bg-body-secondary dropdown-toggle rounded-1"
             type="button"
@@ -55,14 +146,17 @@
           </ul>
         </div>
       </section>
-      <!-- filter sectin close -->
+      <!-- filter section close -->
 
       <!-- Post section start -->
-      <section class="mt-3 posts">
-        <div class="post-container">
+      <section
+        class="mt-3 posts d-flex gap-4 container-md p-0 p-md-2 justify-content-between"
+      >
+        <div class="post-container post-left-side">
           <!-- Article post -->
           <div class="post pb-4 my-3 shadow">
             <img
+              class="img-fluid"
               src="./assets/images/post_images/post1.png"
               alt="article-image"
             />
@@ -111,26 +205,41 @@
                 I’ve worked in UX for the better part of a decade. From now on,
                 I plan to rei…
               </p>
-              <div class="post-author d-flex justify-content-between">
+              <div
+                class="post-author d-flex justify-content-between align-items-center"
+              >
                 <div class="author-name-image d-flex gap-2">
                   <img
                     src="./assets/images/author_images/author1.png"
                     alt="author-image"
                   />
-                  <div class="author-name-views">
+                  <div
+                    class="author-name-views d-md-flex align-items-md-center justify-content-md-between"
+                  >
                     <h6 class="m-0 text-nowrap">Sarthak Kamra</h6>
-                    <small>1.4k views</small>
+                    <small class="ms-auto d-md-none">1.4k views</small>
                   </div>
                 </div>
-                <button
-                  class="align-self-center justify-content-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
+                <small
+                  class="ms-auto d-none d-md-flex me-5 align-items-md-center gap-2"
+                  ><img
+                    src="./assets/images/visibility_24px.svg"
+                    alt="visibility"
+                  />
+                  1.4k views</small
+                >
+                <div
+                  class="d-flex btn align-items-center p-0 m-0 bg-body-secondary border-0 px-3 py-2 rounded-1"
                 >
                   <img
                     class="mx-1"
                     src="./assets/images/posts_icon/share.png"
                     alt="share"
-                  />Share
-                </button>
+                  />
+                  <button class="bg-transparent border-0 d-md-none">
+                    Share
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -138,6 +247,7 @@
           <!-- Education post -->
           <div class="post pb-4 my-3 shadow">
             <img
+              class="img-fluid"
               src="./assets/images/post_images/post2.png"
               alt="education-image"
             />
@@ -213,6 +323,7 @@
           <!-- Meetup post -->
           <div class="post pb-4 my-3 shadow">
             <img
+              class="img-fluid"
               src="./assets/images/post_images/post3.png"
               alt="meetup-image"
             />
@@ -395,10 +506,75 @@
             </div>
           </div>
           <img
-            class="position-fixed bottom-0 end-0 w-10 rounded-circle p-3 bg-danger btn"
+            class="position-fixed d-md-none me-2 mb-2 bottom-0 end-0 w-10 rounded-circle p-3 bg-danger btn"
             src="./assets/images/posts_icon/edit_pen.svg"
             alt="edit_pen"
           />
+        </div>
+
+        <!-- Post right side -->
+        <div class="post-right-side d-none d-md-flex flex-md-column w-25">
+          <div class="search-location">
+            <div class="position-relative">
+              <input
+                class="w-100 text-dark border-0 border-bottom py-1 ps-3"
+                type="text"
+                placeholder="Enter your location"
+              />
+              <div class="position-absolute start-0 top-0">
+                <img
+                  src="./assets/images/outline-location_on-24px 2.svg"
+                  alt="location"
+                />
+              </div>
+              <div class="position-absolute end-0 top-0">
+                <img src="./assets/images/edit.svg" alt="edit" />
+              </div>
+            </div>
+            <div class="d-flex mt-3">
+              <div class="w-25 align-self-start text-muted">
+                <img class="" src="./assets/images/hint.svg" alt="hint" />
+              </div>
+              <small class="lh-2 text-muted fs-6">
+                Your location will help us serve better and extend a
+                personalised experience.
+              </small>
+            </div>
+          </div>
+
+          <!-- REcommended Groups -->
+          <div class="groups mt-5">
+            <div>
+              <div class="d-flex align-items-center gap-1 mb-3">
+                <img
+                  src="./assets/images/twotone-thumb_up-24px.svg"
+                  alt="like group"
+                />
+                <p class="text-uppercase text-dark m-0 fs-6">
+                  Recommended Groups
+                </p>
+              </div>
+
+              <!-- Group -->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex gap-2 align-items-center">
+                  <img
+                    class="w-100 h-100"
+                    src="./assets/images/group/group1.png"
+                    alt="group"
+                  />
+                  <p class="m-0 fs-6">Leisure</p>
+                </div>
+                <button class="rounded-pill border-0 px-3 py-1 fs-6">
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <a class="align-self-end mt-5 fs-6 text-decoration-none" href="#"
+            >See More...</a
+          >
         </div>
       </section>
       <!-- Post section close -->
@@ -441,11 +617,81 @@
         </div>
       </div>
 
-      <!-- login -->
-      <div>
-        
-      </div>
+      <!-- Signup section  -->
+      <section class="container">
+        <div class="input-fields">
+          <div class="name-input d-flex w-100">
+            <input
+              class="w-50 p-2 bg-light"
+              type="text"
+              placeholder="First Name"
+            />
+            <input
+              class="w-50 p-2 bg-light"
+              type="text"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="rest-input w-100 position-relative">
+            <input
+              class="w-100 p-2 bg-light"
+              type="email"
+              placeholder="Email"
+            />
+            <input
+              class="w-100 p-2 bg-light position-relative"
+              type="password"
+              placeholder="Password"
+            />
+            <input
+              class="w-100 p-2 bg-light"
+              type="password"
+              placeholder="Confirm Password"
+            />
+
+            <img
+              class="position-absolute end-0 top-50 me-2"
+              src="./assets/images/visibility_24px.svg"
+              alt="visibility"
+            />
+          </div>
+        </div>
+        <div class="my-4 create-button d-flex justify-content-between">
+          <button
+            class="border-0 shadow-none rounded-pill py-2 px-4 btn btn-primary"
+          >
+            Create Account
+          </button>
+          <a class="text-dark fw-semibold" href="#signin">or, Sign In</a>
+        </div>
+        <div class="facebook-button mb-3">
+          <button
+            class="w-100 bg-transparent border-1 shadow-none rounded-1 py-2 d-flex align-items-center justify-content-center gap-2"
+          >
+            <img
+              src="./assets/images/f_logo_RGB-Blue_1024.svg"
+              alt="facebook"
+            />
+            Sign up with Facebook
+          </button>
+        </div>
+        <div class="google-button mb-4">
+          <button
+            class="w-100 bg-transparent border-1 shadow-none rounded-1 py-2 d-flex align-items-center justify-content-center gap-2"
+          >
+            <img src="./assets/images/search.svg" alt="google" />
+            Sign up with Google
+          </button>
+        </div>
+
+        <div class="text-center lh-sm">
+          <small>
+            By signing up, you agree to our Terms & conditions, Privacy policy
+          </small>
+        </div>
+      </section>
     </main>
+
     <footer></footer>
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>

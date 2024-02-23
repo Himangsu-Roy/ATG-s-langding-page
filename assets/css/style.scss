@@ -18,7 +18,7 @@ $hero-bg-image: "../images/hero-bg.png";
 }
 
 // Header section
-.header {
+.hero {
   @include background-image($hero-bg-image);
   min-height: 14.75rem;
   position: relative;
@@ -114,14 +114,29 @@ $hero-bg-image: "../images/hero-bg.png";
       }
     }
   }
-}
 
+  .post-right-side {
+    input {
+      outline: none;
+
+      &::placeholder {
+        font-size: medium;
+      }
+    }
+
+    .groups {
+      button {
+        &:hover {
+          background-color: black;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
 
 /* Media query for tablets */
 @media screen and (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
 }
 
 /* Media query for laptops/desktops */
